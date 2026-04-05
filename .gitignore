@@ -1,0 +1,23 @@
+cat > .gitignore << 'EOF'
+# Environment files — NEVER commit these
+.env
+.env.local
+.env.production
+
+# Frontend
+frontend/web/node_modules/
+frontend/web/dist/
+frontend/mobile/node_modules/
+frontend/mobile/.expo/
+
+# Backend
+backend/target/
+backend/*.jar
+backend/.mvn/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+EOF
